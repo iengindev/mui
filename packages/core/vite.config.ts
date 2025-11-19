@@ -4,6 +4,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import vitePluginDts from 'vite-plugin-dts'
+import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -14,6 +15,7 @@ export default defineConfig({
       tsconfigPath: 'tsconfig.build.json',
       copyDtsFiles: true,
     }),
+    tailwindcss(),
   ],
   build: {
     lib: {
