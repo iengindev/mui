@@ -1,9 +1,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-# MUI – Modular UI Library for Vue 3
-
-**Version:** v0.0.1-beta  
-**Status:** Early Beta
+# MUI – Modular UI Library for Vue 3 [Early Beta]
 
 A modular, flexible, and stylish UI component library built for modern Vue 3 applications. Powered by **Vite**, **TypeScript**, **TSX**, and **TailwindCSS**. Designed for scalability, customization, and clean development workflows.
 
