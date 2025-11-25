@@ -13,7 +13,7 @@ export default defineComponent((props: ButtonPorpsType, ctx: SetupContext<Button
     <>
       <button { ...ctx.attrs } class={methods.clsx} onClick={actions.handleClick} disabled={props.disabled}>
         {
-          methods.label
+          methods.label()
         }
       </button>
     </>
