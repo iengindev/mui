@@ -19,7 +19,7 @@
     "prepack": "npm run build"
   },
   "exports": {
-    "./style.css": "./dist/core.css",
+    "./style": "./dist/core.css",
     ".": {
       "import": "./dist/mui.es.js",
       "types": "./dist/index.d.ts"
