@@ -20,7 +20,13 @@ export default defineComponent((props: ButtonPorpsType, ctx: SetupContext<Button
   )
 }, {
   props: [
+    'label',
     'severity',
+    'variant',
+    'size',
+    'badge',
+    'rounded',
+    'disabled',
   ],
 
   emits: [
