@@ -1,10 +1,11 @@
 import { defineComponent } from 'vue'
-import { RouterView } from 'vue-router'
+
+import { MButton } from '@mui/core'
 
 export default defineComponent(() => {
   return () => (
     <>
-      <RouterView/>
+      <MButton label='Primary'/>
     </>
   )
 })
