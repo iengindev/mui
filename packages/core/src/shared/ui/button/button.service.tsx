@@ -9,6 +9,20 @@ export const useButtonService = (props: ButtonPorpsType, ctx: SetupContext<Butto
       'mui-button-severity-' + (props.severity ?? 'primary') + '-' + (props.variant ?? 'default'),
       'mui-button-size-' + (props.size ?? 'base'),
     ].join(' '),
+
+    label: () => {
+      if (!props.label) {
+        return null
+      }
+
+      return (
+        <span class="label">
+          {
+            props.label
+          }
+        </span>
+      )
+    }
   },
 
   actions: {
