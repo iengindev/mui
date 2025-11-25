@@ -7,11 +7,11 @@ import { useButtonService } from './button.service'
 import type { ButtonPorpsType, ButtonEmitsType } from './button.types'
 
 export default defineComponent((props: ButtonPorpsType, ctx: SetupContext<ButtonEmitsType>) => {
-  const { clsx } = useButtonService(props, ctx)
+  const { clsx, actions } = useButtonService(props, ctx)
 
   return () => (
     <>
-      <button { ...ctx.attrs } class={clsx()}>
+      <button { ...ctx.attrs } class={clsx()} onClick={actions.handleClick} disabled={props.disabled}>
       </button>
     </>
   )
@@ -19,6 +19,7 @@ export default defineComponent((props: ButtonPorpsType, ctx: SetupContext<Button
   props: [
     'severity',
   ],
+
   emits: [
     'click',
   ],
