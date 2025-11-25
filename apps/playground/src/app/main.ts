@@ -1,6 +1,8 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
+import '@mui/core/style'
+
 import App from './app'
 import router from './router'
 
