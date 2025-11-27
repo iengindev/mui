@@ -29,7 +29,15 @@ export const useButtonService = (props: ButtonPorpsType, ctx: SetupContext<Butto
         return null
       }
 
-      return ['mui-btn', severity(), variant(), size()].filter(clsx => clsx).join(' ')
+      const rounded = () => {
+        if (props.rounded) {
+          return 'rounded'
+        }
+
+        return null
+      }
+
+      return ['mui-btn', severity(), variant(), size(), rounded()].filter(clsx => clsx).join(' ')
     },
 
     label: () => {

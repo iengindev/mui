@@ -6,7 +6,7 @@
     @apply mui:inline-flex mui:items-center mui:justify-center mui:gap-2;
     @apply mui:font-[500];
     @apply mui:leading-4;
-    @apply mui:rounded-lg mui:select-none;
+    @apply mui:select-none;
     @apply mui:overflow-hidden;
     @apply mui:cursor-pointer;
     @apply mui:outline-none;
@@ -20,6 +20,7 @@
     font-size: var(--mui-btn-fs, 1rem);
     background-color: var(--mui-btn-bg-color, oklch(21% 0.006 285.885)); /* zinc 900 */
     border-color: var(--mui-btn-border-color, transparent);
+    border-radius: var(--mui-btn-border-radius, .5rem);
   }
 
   .mui-btn:hover {
@@ -91,6 +92,14 @@
     --mui-btn-bg-color-active: color-mix(in oklch, var(--mui-btn-paint-text-color, oklch(21% 0.006 285.885)) 10%, transparent);
   }
 
+  .mui-btn-variant-outlined {
+    --mui-btn-text-color: var(--mui-btn-paint-text-color, oklch(21% 0.006 285.885));
+    --mui-btn-bg-color: transparent;
+    --mui-btn-bg-color-hover: color-mix(in oklch, var(--mui-btn-paint-text-color, oklch(21% 0.006 285.885)) 5%, transparent);
+    --mui-btn-bg-color-active: color-mix(in oklch, var(--mui-btn-paint-text-color, oklch(21% 0.006 285.885)) 10%, transparent);
+    --mui-btn-border-color: color-mix(in oklch, var(--mui-btn-paint-text-color, oklch(21% 0.006 285.885)) 30%, transparent);
+  }
+
   .mui-btn-size-small {
     --mui-btn-py: .375rem;
     --mui-btn-px: .635rem;
@@ -101,5 +110,9 @@
     --mui-btn-py: .625rem;
     --mui-btn-px: .875rem;
     --mui-btn-fs: 1.125rem;
+  }
+
+  .rounded {
+    --mui-btn-border-radius: 2rem;
   }
 }
