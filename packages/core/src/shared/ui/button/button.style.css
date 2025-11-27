@@ -9,12 +9,25 @@
     @apply mui:rounded-lg mui:select-none;
     @apply mui:overflow-hidden;
     @apply mui:cursor-pointer;
-    @apply mui:outline-transparent;
+    @apply mui:outline-none;
+    @apply mui:border;
+    @apply mui:transition mui:ease-in-out mui:duration-150;
 
+    font-family: inherit;
+    font-feature-settings: inherit;
+    color: var(--mui-btn-text-color, oklch(98.5% 0 0)); /* zinc 50 */
     padding: var(--mui-btn-py, .5rem) var(--mui-btn-px, .75rem);
     font-size: var(--mui-btn-fs, 1rem);
-    border-color: var(--mui-btn-border, #000);
-    border-width: 1px;
+    background-color: var(--mui-btn-bg-color, oklch(21% 0.006 285.885)); /* zinc 900 */
+    border-color: var(--mui-btn-border-color, transparent);
+  }
+
+  .mui-btn:hover {
+    background-color: var(--mui-btn-bg-color-hover, oklch(27.4% 0.006 286.033)); /* zinc 800 */
+  }
+
+  .mui-btn:active {
+    background-color: var(--mui-btn-bg-color-hover, oklch(37% 0.013 285.805)); /* zinc 700 */
   }
 
   .mui-btn-sm {
