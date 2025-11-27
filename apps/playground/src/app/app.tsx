@@ -64,6 +64,66 @@ export default defineComponent(() => {
         <MButton label='Submit' severity='help' variant='text'/>
         <MButton label='Submit' severity='help' size='large' variant='text'/>
       </div>
+
+      <div>
+        <MButton label='Submit' size='small' variant='outlined'/>
+        <MButton label='Submit' variant='outlined'/>
+        <MButton label='Submit' size='large' variant='outlined'/>
+
+        <MButton label='Submit' severity='secondary' size='small' variant='outlined'/>
+        <MButton label='Submit' severity='secondary' variant='outlined'/>
+        <MButton label='Submit' severity='secondary' size='large' variant='outlined'/>
+
+        <MButton label='Submit' severity='info' size='small' variant='outlined'/>
+        <MButton label='Submit' severity='info' variant='outlined'/>
+        <MButton label='Submit' severity='info' size='large' variant='outlined'/>
+
+        <MButton label='Submit' severity='success' size='small' variant='outlined'/>
+        <MButton label='Submit' severity='success' variant='outlined'/>
+        <MButton label='Submit' severity='success' size='large' variant='outlined'/>
+
+        <MButton label='Submit' severity='warning' size='small' variant='outlined'/>
+        <MButton label='Submit' severity='warning' variant='outlined'/>
+        <MButton label='Submit' severity='warning' size='large' variant='outlined'/>
+
+        <MButton label='Submit' severity='danger' size='small' variant='outlined'/>
+        <MButton label='Submit' severity='danger' variant='outlined'/>
+        <MButton label='Submit' severity='danger' size='large' variant='outlined'/>
+
+        <MButton label='Submit' severity='help' size='small' variant='outlined'/>
+        <MButton label='Submit' severity='help' variant='outlined'/>
+        <MButton label='Submit' severity='help' size='large' variant='outlined'/>
+      </div>
+
+      <div>
+        <MButton label='Submit' size='small' rounded/>
+        <MButton label='Submit' rounded/>
+        <MButton label='Submit' size='large' rounded/>
+
+        <MButton label='Submit' severity='secondary' size='small' rounded/>
+        <MButton label='Submit' severity='secondary' rounded/>
+        <MButton label='Submit' severity='secondary' size='large' rounded/>
+
+        <MButton label='Submit' severity='info' size='small' rounded/>
+        <MButton label='Submit' severity='info' rounded/>
+        <MButton label='Submit' severity='info' size='large' rounded/>
+
+        <MButton label='Submit' severity='success' size='small' rounded/>
+        <MButton label='Submit' severity='success' rounded/>
+        <MButton label='Submit' severity='success' size='large' rounded/>
+
+        <MButton label='Submit' severity='warning' size='small' rounded/>
+        <MButton label='Submit' severity='warning' rounded/>
+        <MButton label='Submit' severity='warning' size='large' rounded/>
+
+        <MButton label='Submit' severity='danger' size='small' rounded/>
+        <MButton label='Submit' severity='danger' rounded/>
+        <MButton label='Submit' severity='danger' size='large' rounded/>
+
+        <MButton label='Submit' severity='help' size='small' rounded/>
+        <MButton label='Submit' severity='help' rounded/>
+        <MButton label='Submit' severity='help' size='large' rounded/>
+      </div>
     </>
   )
 })
