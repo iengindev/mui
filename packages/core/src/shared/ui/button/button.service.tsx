@@ -1,14 +1,14 @@
-import type { SetupContext } from 'vue'
+import { type SetupContext } from 'vue'
 
 import type { ButtonPorpsType, ButtonEmitsType } from './button.types'
 
 export const useButtonService = (props: ButtonPorpsType, ctx: SetupContext<ButtonEmitsType>) => ({
   methods: {
     clsx: [
-      'mui-button',
-      'mui-button-severity-' + (props.severity ?? 'primary') + '-' + (props.variant ?? 'default'),
-      'mui-button-size-' + (props.size ?? 'base'),
-    ].join(' '),
+      'mui-btn',
+      props.size === 'small' ? 'mui-btn-sm' : null,
+      props.size === 'large' ? 'mui-btn-lg' : null,
+    ].filter(clsx => clsx).join(' '),
 
     label: () => {
       if (!props.label) {
@@ -29,5 +29,5 @@ export const useButtonService = (props: ButtonPorpsType, ctx: SetupContext<Butto
     handleClick: (event: Event) => {
       ctx.emit('click', event)
     }
-  }
+  },
 })

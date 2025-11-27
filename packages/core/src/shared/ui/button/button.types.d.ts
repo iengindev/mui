@@ -1,6 +1,6 @@
 export type ButtonSeverityType = 'primary' | 'secondary' | 'info' | 'success' | 'warning' | 'danger' | 'help'
-export type ButtonVariantType = 'default' | 'text' | 'link' | 'outlined'
-export type ButtonSizeType = 'small' | 'base' | 'large'
+export type ButtonVariantType = 'text' | 'link' | 'outlined'
+export type ButtonSizeType = 'small' | 'large'
 
 export interface ButtonPorpsType {
   label?:       string

@@ -1,6 +1,31 @@
-@reference "@/assets/styles/main.style.css";
+@reference "../../../assets/styles/main.style.css";
 
 @layer components {
-  .mui-button {
+  .mui-btn {
+    @apply mui:relative;
+    @apply mui:inline-flex mui:items-center mui:justify-center mui:gap-2;
+    @apply mui:font-[500];
+    @apply mui:leading-4;
+    @apply mui:rounded-lg mui:select-none;
+    @apply mui:overflow-hidden;
+    @apply mui:cursor-pointer;
+    @apply mui:outline-transparent;
+
+    padding: var(--mui-btn-py, .5rem) var(--mui-btn-px, .75rem);
+    font-size: var(--mui-btn-fs, 1rem);
+    border-color: var(--mui-btn-border, #000);
+    border-width: 1px;
+  }
+
+  .mui-btn-sm {
+    --mui-btn-py: .375rem;
+    --mui-btn-px: .635rem;
+    --mui-btn-fs: .875rem;
+  }
+
+  .mui-btn-lg {
+    --mui-btn-py: .625rem;
+    --mui-btn-px: .875rem;
+    --mui-btn-fs: 1.125rem;
   }
 }

@@ -1,1 +1,5 @@
-@import "tailwindcss" prefix(mui);
+@import "tailwindcss" prefix(mui) isolate;
+
+:root {
+  font-size: 14px;
+}
