@@ -1,4 +1,4 @@
-export type ButtonSeverityType = 'primary' | 'secondary' | 'info' | 'success' | 'warning' | 'danger' | 'help'
+export type ButtonSeverityType = 'secondary' | 'info' | 'success' | 'warning' | 'danger' | 'help'
 export type ButtonVariantType = 'text' | 'link' | 'outlined'
 export type ButtonSizeType = 'small' | 'large'
 

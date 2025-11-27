@@ -4,11 +4,33 @@ import type { ButtonPorpsType, ButtonEmitsType } from './button.types'
 
 export const useButtonService = (props: ButtonPorpsType, ctx: SetupContext<ButtonEmitsType>) => ({
   methods: {
-    clsx: [
-      'mui-btn',
-      props.size === 'small' ? 'mui-btn-sm' : null,
-      props.size === 'large' ? 'mui-btn-lg' : null,
-    ].filter(clsx => clsx).join(' '),
+    clsx: () => {
+      const severity = () => {
+        if (props.severity) {
+          return `mui-btn-severity-${props.severity}`
+        }
+
+        return null
+      }
+
+      const variant = () => {
+        if (props.variant) {
+          return `mui-btn-variant-${props.variant}`
+        }
+
+        return null
+      }
+
+      const size = () => {
+        if (props.size) {
+          return `mui-btn-size-${props.size}`
+        }
+
+        return null
+      }
+
+      return ['mui-btn', severity(), variant(), size()].filter(clsx => clsx).join(' ')
+    },
 
     label: () => {
       if (!props.label) {
@@ -22,12 +44,12 @@ export const useButtonService = (props: ButtonPorpsType, ctx: SetupContext<Butto
           }
         </span>
       )
-    }
+    },
   },
 
   actions: {
     handleClick: (event: Event) => {
       ctx.emit('click', event)
-    }
+    },
   },
 })
