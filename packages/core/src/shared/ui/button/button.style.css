@@ -3,7 +3,7 @@
 @layer components {
   .mui-btn {
     @apply mui:relative;
-    @apply mui:inline-flex mui:items-center mui:justify-center mui:gap-2;
+    @apply mui:inline-flex mui:flex-nowrap mui:items-center mui:justify-center mui:gap-2;
     @apply mui:font-[500];
     @apply mui:leading-4;
     @apply mui:select-none;
@@ -45,6 +45,9 @@
     --mui-btn-bg-color-active: oklch(87.1% 0.006 286.286); /* zinc 300 */
 
     --mui-btn-paint-text-color: oklch(44.2% 0.017 285.786); /* zinc 600 */
+
+    --mui-btn-badge-text-color: oklch(96.7% 0.001 286.375); /* zinc 100 */
+    --mui-btn-badge-bg-color: oklch(44.2% 0.017 285.786); /* zinc 600 */
   }
 
   .mui-btn-severity-info {
@@ -121,5 +124,20 @@
 
   .rounded {
     --mui-btn-border-radius: 2rem;
+  }
+
+  .mui-btn .badge {
+    @apply mui:inline-flex mui:flex-nowrap mui:items-center mui:justify-center;
+    @apply mui:rounded-full;
+    @apply mui:leading-0;
+
+    min-width: calc(var(--mui-btn-font-size, 1rem) * 1);
+    max-width: calc(var(--mui-btn-font-size, 1rem) * 1);
+    min-height: calc(var(--mui-btn-font-size, 1rem) * 1);
+    max-height: calc(var(--mui-btn-font-size, 1rem) * 1);
+
+    color: var(--mui-btn-badge-text-color, oklch(21% 0.006 285.885));
+    font-size: calc(var(--mui-btn-font-size, 1rem) * 0.6);
+    background-color: var(--mui-btn-badge-bg-color, oklch(98.5% 0 0));
   }
 }

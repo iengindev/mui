@@ -15,6 +15,10 @@ export default defineComponent((props: ButtonPorpsType, ctx: SetupContext<Button
         {
           methods.label()
         }
+
+        {
+          methods.badge()
+        }
       </button>
     </>
   )

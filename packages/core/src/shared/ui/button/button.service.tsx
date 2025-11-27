@@ -53,6 +53,20 @@ export const useButtonService = (props: ButtonPorpsType, ctx: SetupContext<Butto
         </span>
       )
     },
+
+    badge: () => {
+      if (!props.badge) {
+        return null
+      }
+
+      return (
+        <span class="badge">
+          {
+            props.badge
+          }
+        </span>
+      )
+    },
   },
 
   actions: {

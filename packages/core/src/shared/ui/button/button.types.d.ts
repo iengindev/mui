@@ -7,7 +7,7 @@ export interface ButtonPorpsType {
   severity?:    ButtonSeverityType
   variant?:     ButtonVariantType
   size?:        ButtonSizeType
-  badge?:       number
+  badge?:       string
   rounded?:     boolean
   disabled?:    boolean
 }
