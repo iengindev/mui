@@ -36,6 +36,66 @@ export default defineComponent(() => {
       </div>
 
       <div>
+        <MButton label='Submit' size='small' badge="9+"/>
+        <MButton label='Submit' badge="9+"/>
+        <MButton label='Submit' size='large' badge="9+"/>
+
+        <MButton label='Submit' severity='secondary' size='small' badge="2"/>
+        <MButton label='Submit' severity='secondary' badge="2"/>
+        <MButton label='Submit' severity='secondary' size='large' badge="2"/>
+
+        <MButton label='Submit' severity='info' size='small' badge="2"/>
+        <MButton label='Submit' severity='info' badge="2"/>
+        <MButton label='Submit' severity='info' size='large' badge="2"/>
+
+        <MButton label='Submit' severity='success' size='small' badge="2"/>
+        <MButton label='Submit' severity='success' badge="2"/>
+        <MButton label='Submit' severity='success' size='large' badge="2"/>
+
+        <MButton label='Submit' severity='warning' size='small' badge="2"/>
+        <MButton label='Submit' severity='warning' badge="2"/>
+        <MButton label='Submit' severity='warning' size='large' badge="2"/>
+
+        <MButton label='Submit' severity='danger' size='small' badge="2"/>
+        <MButton label='Submit' severity='danger' badge="2"/>
+        <MButton label='Submit' severity='danger' size='large' badge="2"/>
+
+        <MButton label='Submit' severity='help' size='small' badge="2"/>
+        <MButton label='Submit' severity='help' badge="2"/>
+        <MButton label='Submit' severity='help' size='large' badge="2"/>
+      </div>
+
+      <div>
+        <MButton label='Submit' size='small' disabled/>
+        <MButton label='Submit' disabled/>
+        <MButton label='Submit' size='large' disabled/>
+
+        <MButton label='Submit' severity='secondary' size='small' disabled/>
+        <MButton label='Submit' severity='secondary' disabled/>
+        <MButton label='Submit' severity='secondary' size='large' disabled/>
+
+        <MButton label='Submit' severity='info' size='small' disabled/>
+        <MButton label='Submit' severity='info' disabled/>
+        <MButton label='Submit' severity='info' size='large' disabled/>
+
+        <MButton label='Submit' severity='success' size='small' disabled/>
+        <MButton label='Submit' severity='success' disabled/>
+        <MButton label='Submit' severity='success' size='large' disabled/>
+
+        <MButton label='Submit' severity='warning' size='small' disabled/>
+        <MButton label='Submit' severity='warning' disabled/>
+        <MButton label='Submit' severity='warning' size='large' disabled/>
+
+        <MButton label='Submit' severity='danger' size='small' disabled/>
+        <MButton label='Submit' severity='danger' disabled/>
+        <MButton label='Submit' severity='danger' size='large' disabled/>
+
+        <MButton label='Submit' severity='help' size='small' disabled/>
+        <MButton label='Submit' severity='help' disabled/>
+        <MButton label='Submit' severity='help' size='large' disabled/>
+      </div>
+
+      <div>
         <MButton label='Submit' size='small' variant='text'/>
         <MButton label='Submit' variant='text'/>
         <MButton label='Submit' size='large' variant='text'/>
