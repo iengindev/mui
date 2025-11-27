@@ -10,6 +10,6 @@ cd ../../apps/playground
 
 rm -rf node_modules/@mui
 
-npm i $PACKAGE
+npm install $PACKAGE
 
 npm run dev
