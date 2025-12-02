@@ -122,7 +122,7 @@
     --mui-btn-font-size: 1.125rem;
   }
 
-  .rounded {
+  .mui-btn-rounded {
     --mui-btn-border-radius: 2rem;
   }
 

@@ -31,7 +31,7 @@ export const useButtonService = (props: ButtonPorpsType, ctx: SetupContext<Butto
 
       const rounded = () => {
         if (props.rounded) {
-          return 'rounded'
+          return 'mui-btn-rounded'
         }
 
         return null
