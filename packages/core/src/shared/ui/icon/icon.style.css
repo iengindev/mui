@@ -1,0 +1,6 @@
+@reference "../../../assets/styles/main.style.css";
+
+@layer components {
+  .mui-icon {
+  }
+}
