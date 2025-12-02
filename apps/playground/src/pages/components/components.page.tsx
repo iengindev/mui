@@ -32,6 +32,10 @@ export default defineComponent(() => {
           <MButton label='Submit' severity='help' size={size.value}/>
         </div>
 
+        <h1 class="text-sm font-medium">
+          Buttons rounded:
+        </h1>
+
         <div class="flex flex-nowrap items-center gap-2">
           <MButton label='Submit' size={size.value} rounded/>
           <MButton label='Submit' severity='secondary' size={size.value} rounded/>
@@ -41,6 +45,10 @@ export default defineComponent(() => {
           <MButton label='Submit' severity='danger' size={size.value} rounded/>
           <MButton label='Submit' severity='help' size={size.value} rounded/>
         </div>
+
+        <h1 class="text-sm font-medium">
+          Buttons badge:
+        </h1>
 
         <div class="flex flex-nowrap items-center gap-2">
           <MButton label='Submit' size={size.value} badge='2'/>
@@ -52,6 +60,10 @@ export default defineComponent(() => {
           <MButton label='Submit' severity='help' size={size.value} badge='2'/>
         </div>
 
+        <h1 class="text-sm font-medium">
+          Buttons disabled:
+        </h1>
+
         <div class="flex flex-nowrap items-center gap-2">
           <MButton label='Submit' size={size.value} disabled/>
           <MButton label='Submit' severity='secondary' size={size.value} disabled/>
@@ -62,6 +74,10 @@ export default defineComponent(() => {
           <MButton label='Submit' severity='help' size={size.value} disabled/>
         </div>
 
+        <h1 class="text-sm font-medium">
+          Buttons variant text:
+        </h1>
+
         <div class="flex flex-nowrap items-center gap-2">
           <MButton label='Submit' size={size.value} variant='text'/>
           <MButton label='Submit' severity='secondary' size={size.value} variant='text'/>
@@ -71,6 +87,10 @@ export default defineComponent(() => {
           <MButton label='Submit' severity='danger' size={size.value} variant='text'/>
           <MButton label='Submit' severity='help' size={size.value} variant='text'/>
         </div>
+
+        <h1 class="text-sm font-medium">
+          Buttons variant outlined:
+        </h1>
 
         <div class="flex flex-nowrap items-center gap-2">
           <MButton label='Submit' size={size.value} variant='outlined'/>
