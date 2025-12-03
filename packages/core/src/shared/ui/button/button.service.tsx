@@ -2,6 +2,8 @@ import { type SetupContext } from 'vue'
 
 import type { ButtonPorpsType, ButtonEmitsType } from './button.types'
 
+import { MIcon } from '..'
+
 export const useButtonService = (props: ButtonPorpsType, ctx: SetupContext<ButtonEmitsType>) => ({
   methods: {
     clsx: () => {
@@ -37,7 +39,95 @@ export const useButtonService = (props: ButtonPorpsType, ctx: SetupContext<Butto
         return null
       }
 
-      return ['mui-btn', severity(), variant(), size(), rounded()].filter(clsx => clsx).join(' ')
+      const iconOnly = () => {
+        if (props.icon) {
+          return 'mui-btn-icon-only'
+        }
+
+        return null
+      }
+
+      return ['mui-btn', severity(), variant(), size(), rounded(), iconOnly()].filter(clsx => clsx).join(' ')
+    },
+
+    topIcons: () => {
+      if (!props.icon) {
+        return null
+      }
+
+      const icons = props.icon.filter(icon => icon.position === 'top') ?? []
+
+      if (icons.length === 0) {
+        return null
+      }
+
+      return (
+        <span class="mui-btn-icons-top">
+          {
+            icons.map((item, i) => <MIcon key={i} icon={item.icon}/>)
+          }
+        </span>
+      )
+    },
+
+    leftIcons: () => {
+      if (!props.icon) {
+        return null
+      }
+
+      const icons = props.icon.filter(icon => icon.position === 'left' || icon.position === undefined) ?? []
+
+      if (icons.length === 0) {
+        return null
+      }
+
+      return (
+        <span class="mui-btn-icons-left">
+          {
+            icons.map((item, i) => <MIcon key={i} icon={item.icon}/>)
+          }
+        </span>
+      )
+    },
+
+    rightIcons: () => {
+      if (!props.icon) {
+        return null
+      }
+
+      const icons = props.icon.filter(icon => icon.position === 'right') ?? []
+
+      if (icons.length === 0) {
+        return null
+      }
+
+      return (
+        <span class="mui-btn-icons-right">
+          {
+            icons.map((item, i) => <MIcon key={i} icon={item.icon}/>)
+          }
+        </span>
+      )
+    },
+
+    bottomIcons: () => {
+      if (!props.icon) {
+        return null
+      }
+
+      const icons = props.icon.filter(icon => icon.position === 'bottom') ?? []
+
+      if (icons.length === 0) {
+        return null
+      }
+
+      return (
+        <span class="mui-btn-icons-bottom">
+          {
+            icons.map((item, i) => <MIcon key={i} icon={item.icon}/>)
+          }
+        </span>
+      )
     },
 
     label: () => {

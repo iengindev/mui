@@ -3,7 +3,7 @@
 @layer components {
   .mui-btn {
     @apply mui:relative;
-    @apply mui:inline-flex mui:flex-nowrap mui:items-center mui:justify-center mui:gap-2;
+    @apply mui:inline-block;
     @apply mui:font-[500];
     @apply mui:leading-5;
     @apply mui:select-none;
@@ -22,6 +22,16 @@
     background-color: var(--mui-btn-bg-color, oklch(21% 0.006 285.885)); /* zinc 900 */
     border-color: var(--mui-btn-border-color, transparent);
     border-radius: var(--mui-btn-border-radius, .5rem);
+    opacity: var(--mui-btn-opacity, 1);
+  }
+
+  .mui-btn .mui-icon {
+    min-width: calc(var(--mui-btn-font-size, 1rem) * 1.5);
+    max-width: calc(var(--mui-btn-font-size, 1rem) * 1.5);
+    min-height: calc(var(--mui-btn-font-size, 1rem) * 1.5);
+    max-height: calc(var(--mui-btn-font-size, 1rem) * 1.5);
+
+    fill: var(--mui-btn-text-color, oklch(98.5% 0 0)); /* zinc 50 */
   }
 
   .mui-btn:hover:enabled {
@@ -33,9 +43,16 @@
   }
 
   .mui-btn:disabled {
-    opacity: .3;
-
+    --mui-btn-opacity: .3;
     --mui-btn-cursor: not-allowed;
+  }
+
+  .mui-btn .mui-btn-content {
+    @apply mui:flex mui:flex-col mui:items-center mui:justify-center mui:gap-1;
+  }
+
+  .mui-btn .mui-btn-content .mui-btn-row {
+    @apply mui:flex mui:flex-nowrap mui:items-center mui:justify-center mui:gap-1.5;
   }
 
   .mui-btn-severity-secondary {
@@ -114,16 +131,27 @@
     --mui-btn-py: .375rem;
     --mui-btn-px: .635rem;
     --mui-btn-font-size: .875rem;
+
+    --mui-btn-py-icon-only: .375rem;
+    --mui-btn-px-icon-only: .375rem;
   }
 
   .mui-btn-size-large {
     --mui-btn-py: .625rem;
     --mui-btn-px: .875rem;
     --mui-btn-font-size: 1.125rem;
+
+    --mui-btn-py-icon-only: .625rem;
+    --mui-btn-px-icon-only: .625rem;
   }
 
   .mui-btn-rounded {
     --mui-btn-border-radius: 2rem;
+  }
+
+  .mui-btn-icon-only {
+    --mui-btn-py: var(--mui-btn-py-icon-only, .5rem);
+    --mui-btn-px: var(--mui-btn-px-icon-only, .5rem);
   }
 
   .mui-btn .badge {

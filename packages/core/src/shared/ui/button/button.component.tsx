@@ -12,18 +12,39 @@ export default defineComponent((props: ButtonPorpsType, ctx: SetupContext<Button
   return () => (
     <>
       <button { ...ctx.attrs } class={methods.clsx()} onClick={actions.handleClick} disabled={props.disabled}>
-        {
-          methods.label()
-        }
+        <span class="mui-btn-content">
+          {
+            methods.topIcons()
+          }
 
-        {
-          methods.badge()
-        }
+          <span class="mui-btn-row">
+            {
+              methods.leftIcons()
+            }
+
+            {
+              methods.label()
+            }
+
+            {
+              methods.badge()
+            }
+
+            {
+              methods.rightIcons()
+            }
+          </span>
+
+          {
+            methods.bottomIcons()
+          }
+        </span>
       </button>
     </>
   )
 }, {
   props: [
+    'icon',
     'label',
     'severity',
     'variant',
