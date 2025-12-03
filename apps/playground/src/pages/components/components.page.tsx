@@ -101,6 +101,48 @@ export default defineComponent(() => {
           <MButton label='Submit' severity='danger' size={size.value} variant='outlined'/>
           <MButton label='Submit' severity='help' size={size.value} variant='outlined'/>
         </div>
+
+        <h1 class="text-sm font-medium">
+          Buttons only icon:
+        </h1>
+
+        <div class="flex flex-nowrap items-center gap-2">
+          <MButton size={size.value} icon={[{ icon: 'alert-circle-outline' }]}/>
+          <MButton severity='secondary' size={size.value} icon={[{ icon: 'alert-circle-outline' }]}/>
+          <MButton severity='info' size={size.value} icon={[{ icon: 'alert-circle-outline' }]}/>
+          <MButton severity='success' size={size.value} icon={[{ icon: 'alert-circle-outline' }]}/>
+          <MButton severity='warning' size={size.value} icon={[{ icon: 'alert-circle-outline' }]}/>
+          <MButton severity='danger' size={size.value} icon={[{ icon: 'alert-circle-outline' }]}/>
+          <MButton severity='help' size={size.value} icon={[{ icon: 'alert-circle-outline' }]}/>
+        </div>
+
+        <h1 class="text-sm font-medium">
+          Buttons + top icon:
+        </h1>
+
+        <div class="flex flex-nowrap items-center gap-2">
+          <MButton label='Submit' size={size.value} icon={[{ position: 'top', icon: 'alert-circle-outline' }]}/>
+          <MButton label='Submit' severity='secondary' size={size.value} icon={[{ position: 'top', icon: 'alert-circle-outline' }]}/>
+          <MButton label='Submit' severity='info' size={size.value} icon={[{ position: 'top', icon: 'alert-circle-outline' }]}/>
+          <MButton label='Submit' severity='success' size={size.value} icon={[{ position: 'top', icon: 'alert-circle-outline' }]}/>
+          <MButton label='Submit' severity='warning' size={size.value} icon={[{ position: 'top', icon: 'alert-circle-outline' }]}/>
+          <MButton label='Submit' severity='danger' size={size.value} icon={[{ position: 'top', icon: 'alert-circle-outline' }]}/>
+          <MButton label='Submit' severity='help' size={size.value} icon={[{ position: 'top', icon: 'alert-circle-outline' }]}/>
+        </div>
+
+        <h1 class="text-sm font-medium">
+          Buttons + left icon:
+        </h1>
+
+        <div class="flex flex-nowrap items-center gap-2">
+          <MButton label='Submit' size={size.value} icon={[{ position: 'left', icon: 'alert-circle-outline' }]}/>
+          <MButton label='Submit' severity='secondary' size={size.value} icon={[{ position: 'left', icon: 'alert-circle-outline' }]}/>
+          <MButton label='Submit' severity='info' size={size.value} icon={[{ position: 'left', icon: 'alert-circle-outline' }]}/>
+          <MButton label='Submit' severity='success' size={size.value} icon={[{ position: 'left', icon: 'alert-circle-outline' }]}/>
+          <MButton label='Submit' severity='warning' size={size.value} icon={[{ position: 'left', icon: 'alert-circle-outline' }]}/>
+          <MButton label='Submit' severity='danger' size={size.value} icon={[{ position: 'left', icon: 'alert-circle-outline' }]}/>
+          <MButton label='Submit' severity='help' size={size.value} icon={[{ position: 'left', icon: 'alert-circle-outline' }]}/>
+        </div>
       </div>
     </>
   )
