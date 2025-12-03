@@ -2,10 +2,10 @@ import { defineComponent, type SetupContext } from 'vue'
 
 import { useIconService } from './icon.service'
 
-import type { IconPorpsType, IconEmitsType } from './icon.types'
+import type { IconPorpsType } from './icon.types'
 
-export default defineComponent((props: IconPorpsType, ctx: SetupContext<IconEmitsType>) => {
-  const { methods } = useIconService(props, ctx)
+export default defineComponent((props: IconPorpsType, ctx: SetupContext) => {
+  const { methods } = useIconService(props)
 
   return () => (
     <>
