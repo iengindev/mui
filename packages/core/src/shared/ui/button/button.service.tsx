@@ -75,7 +75,7 @@ export const useButtonService = (props: ButtonPorpsType, ctx: SetupContext<Butto
         return null
       }
 
-      const icons = props.icon.filter(icon => icon.position === 'left' || icon.position === undefined) ?? []
+      const icons = props.icon.filter(icon => icon.position === undefined || icon.position === 'left') ?? []
 
       if (icons.length === 0) {
         return null
