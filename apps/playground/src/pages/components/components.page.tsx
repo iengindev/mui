@@ -13,9 +13,11 @@ export default defineComponent(() => {
         </h1>
 
         <div class="flex flex-nowrap items-center gap-2">
-          <MButton label='Small' severity='secondary' size='small' onClick={() => size.value = 'small'}/>
-          <MButton label='Base' severity='secondary' size='small' onClick={() => size.value = undefined}/>
-          <MButton label='Large' severity='secondary' size='small' onClick={() => size.value = 'large'}/>
+          <MButtonGroup>
+            <MButton label='Small' severity='secondary' size='small' onClick={() => size.value = 'small'}/>
+            <MButton label='Base' severity='secondary' size='small' onClick={() => size.value = undefined}/>
+            <MButton label='Large' severity='secondary' size='small' onClick={() => size.value = 'large'}/>
+          </MButtonGroup>
         </div>
 
         <h1 class="text-sm font-medium">
