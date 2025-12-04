@@ -13,6 +13,8 @@
     @apply mui:border;
     @apply mui:transition mui:ease-in-out mui:duration-150;
 
+    min-width: calc(var(--mui-btn-font-size, 1rem) * (35.5 / 14));
+    min-height: calc(var(--mui-btn-font-size, 1rem) * (35.5 / 14));
     padding: var(--mui-btn-py, .5rem) var(--mui-btn-px, .75rem);
     font-family: inherit;
     font-feature-settings: inherit;
@@ -26,10 +28,10 @@
   }
 
   .mui-btn .mui-icon {
-    min-width: calc(var(--mui-btn-font-size, 1rem) * 1.5);
-    max-width: calc(var(--mui-btn-font-size, 1rem) * 1.5);
-    min-height: calc(var(--mui-btn-font-size, 1rem) * 1.5);
-    max-height: calc(var(--mui-btn-font-size, 1rem) * 1.5);
+    min-width: calc(var(--mui-btn-font-size, 1rem) * 1.2);
+    max-width: calc(var(--mui-btn-font-size, 1rem) * 1.2);
+    min-height: calc(var(--mui-btn-font-size, 1rem) * 1.2);
+    max-height: calc(var(--mui-btn-font-size, 1rem) * 1.2);
 
     fill: var(--mui-btn-text-color, oklch(98.5% 0 0)); /* zinc 50 */
   }
