@@ -1,6 +1,6 @@
 import { defineComponent, ref, type Ref } from 'vue'
 
-import { MButton } from '@mui/core'
+import { MButton, MButtonGroup } from '@mui/core'
 
 export default defineComponent(() => {
   const size: Ref<undefined | 'small' | 'large'> = ref<undefined | 'small' | 'large'>(undefined)
@@ -142,6 +142,18 @@ export default defineComponent(() => {
           <MButton label='Submit' severity='warning' size={size.value} icon={[{ position: 'left', icon: 'alert-circle-outline' }]}/>
           <MButton label='Submit' severity='danger' size={size.value} icon={[{ position: 'left', icon: 'alert-circle-outline' }]}/>
           <MButton label='Submit' severity='help' size={size.value} icon={[{ position: 'left', icon: 'alert-circle-outline' }]}/>
+        </div>
+
+        <h1 class="text-sm font-medium">
+          Buttons groups:
+        </h1>
+
+        <div class="flex flex-nowrap items-center gap-2">
+          <MButtonGroup>
+            <MButton label='Submit' size={size.value}/>
+            <MButton label='Submit' size={size.value}/>
+            <MButton label='Submit' size={size.value}/>
+          </MButtonGroup>
         </div>
       </div>
     </>
