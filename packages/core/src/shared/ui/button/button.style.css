@@ -21,7 +21,7 @@
     cursor: var(--mui-btn-cursor, pointer);
     background-color: var(--mui-btn-bg-color, oklch(21% 0.006 285.885)); /* zinc 900 */
     border-color: var(--mui-btn-border-color, transparent);
-    border-radius: var(--mui-btn-border-radius, .5rem);
+    border-radius: var(--mui-btn-border-radius-tl, .5rem) var(--mui-btn-border-radius-tr, .5rem) var(--mui-btn-border-radius-br, .5rem) var(--mui-btn-border-radius-bl, .5rem);
     opacity: var(--mui-btn-opacity, 1);
   }
 
@@ -146,7 +146,10 @@
   }
 
   .mui-btn-rounded {
-    --mui-btn-border-radius: 2rem;
+    --mui-btn-border-radius-tl: 2rem;
+    --mui-btn-border-radius-tr: 2rem;
+    --mui-btn-border-radius-br: 2rem;
+    --mui-btn-border-radius-bl: 2rem;
   }
 
   .mui-btn-icon-only {
