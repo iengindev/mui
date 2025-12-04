@@ -152,9 +152,9 @@ export default defineComponent(() => {
 
         <div class="flex flex-nowrap items-center gap-2">
           <MButtonGroup>
-            <MButton label='Submit' size={size.value}/>
-            <MButton label='Submit' size={size.value}/>
-            <MButton label='Submit' size={size.value}/>
+            <MButton label='Submit' size={size.value} icon={[{ position: 'left', icon: 'alert-circle-outline' }]}/>
+            <MButton label='Submit' size={size.value} icon={[{ position: 'left', icon: 'alert-circle-outline' }]}/>
+            <MButton label='Submit' size={size.value} icon={[{ position: 'left', icon: 'alert-circle-outline' }]}/>
           </MButtonGroup>
         </div>
       </div>
