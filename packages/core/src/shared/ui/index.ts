@@ -5,3 +5,5 @@ export type { IconPorpsType as MIconPorpsType } from './icon/icon.types'
 
 export { default as MButton } from './button/button.component'
 export type { ButtonPorpsType as MButtonPorpsType, ButtonEmitsType as MButtonEmitsType } from './button/button.types'
+
+export { default as MButtonGroup } from './button-group/button-group.component'
