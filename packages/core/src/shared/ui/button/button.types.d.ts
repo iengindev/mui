@@ -5,8 +5,8 @@ export type ButtonVariantType = 'text' | 'link' | 'outlined'
 export type ButtonSizeType = 'small' | 'large'
 
 export type ButtonIconType = {
-  position?: 'top' | 'left' | 'right' | 'bottom'
-  icon: MIconPorpsType['icon']
+  position?:    'top' | 'left' | 'right' | 'bottom'
+  icon:         MIconPorpsType['icon']
 }
 
 export interface ButtonPorpsType {
