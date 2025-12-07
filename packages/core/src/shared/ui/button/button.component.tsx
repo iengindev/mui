@@ -2,41 +2,41 @@ import './button.style.css'
 
 import { defineComponent, type SetupContext } from 'vue'
 
-import { useButtonService } from './button.service'
+import { ButtonService } from './button.service'
 
 import type { ButtonPorpsType, ButtonEmitsType } from './button.types'
 
 export default defineComponent((props: ButtonPorpsType, ctx: SetupContext<ButtonEmitsType>) => {
-  const { methods, actions } = useButtonService(props, ctx)
+  const useButtonService = new ButtonService(props, ctx)
 
   return () => (
     <>
-      <button { ...ctx.attrs } class={methods.clsx()} onClick={actions.handleClick} disabled={props.disabled}>
+      <button { ...ctx.attrs } class={useButtonService.methods().clsx()} onClick={useButtonService.actions().handleClick} disabled={props.disabled}>
         <span class="mui-btn-content">
           {
-            methods.topIcons()
+            useButtonService.methods().viewIcon('top', props.icon ? props.icon.some(item => item.position === 'top') : false)
           }
 
           <span class="mui-btn-row">
             {
-              methods.leftIcons()
+              useButtonService.methods().viewIcon('left', props.icon ? props.icon.some(item => item.position === 'left') : false)
             }
 
             {
-              methods.label()
+              useButtonService.methods().label()
             }
 
             {
-              methods.badge()
+              useButtonService.methods().badge()
             }
 
             {
-              methods.rightIcons()
+              useButtonService.methods().viewIcon('right', props.icon ? props.icon.some(item => item.position === 'right') : false)
             }
           </span>
 
           {
-            methods.bottomIcons()
+            useButtonService.methods().viewIcon('bottom', props.icon ? props.icon.some(item => item.position === 'bottom') : false)
           }
         </span>
       </button>

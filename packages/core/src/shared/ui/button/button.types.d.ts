@@ -1,11 +1,13 @@
 import { MIconPorpsType } from '..'
 
+export type IconPositionType = 'top' | 'left' | 'right' | 'bottom'
+
 export type ButtonSeverityType = 'secondary' | 'info' | 'success' | 'warning' | 'danger' | 'help'
 export type ButtonVariantType = 'text' | 'link' | 'outlined'
 export type ButtonSizeType = 'small' | 'large'
 
 export type ButtonIconType = {
-  position?:    'top' | 'left' | 'right' | 'bottom'
+  position?:    IconPositionType
   icon:         MIconPorpsType['icon']
 }
 
