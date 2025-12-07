@@ -1,0 +1,7 @@
+@reference "../../../assets/styles/main.style.css";
+
+@layer components {
+  .mui-btn-select {
+    @apply mui:flex mui:flex-nowrap mui:items-center;
+  }
+}
