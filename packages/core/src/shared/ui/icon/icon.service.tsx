@@ -1,13 +1,21 @@
-import { type SetupContext } from 'vue'
-
 import type { IconPorpsType } from './icon.types'
 
 import icons from './icons'
 
-export const useIconService = (props: IconPorpsType) => ({
-  methods: {
-    icon: () => icons[props.icon].map((d, i) => (
-      <path key={i} d={d}/>
-    ))
+export class IconService {
+  constructor(
+    public props: IconPorpsType
+  ) {}
+
+  methods() {
+    return {
+      icon: () => {
+        return icons[this.props.icon].map((item, i) => {
+          return (
+            <path key={i} d={item}/>
+          )
+        })
+      }
+    }
   }
-})
+}
