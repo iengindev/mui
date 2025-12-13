@@ -5,9 +5,13 @@ import ButtonComponentPage from './components/button'
 export default <RouteRecordRaw[]> [
   {
     path: '/docs',
-    component: () => import('./docs.page'),
     children: [
-      ...ButtonComponentPage,
+      {
+        path: '/',
+        component: () => import('./docs.page'),
+      },
+
+      ...ButtonComponentPage
     ]
   }
 ]
