@@ -1,11 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import { ComponentsPageRoute } from '@/pages/components'
+import DocsPageRoute from '@/pages/docs'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    ...ComponentsPageRoute
+    ...DocsPageRoute,
   ],
 })
 
