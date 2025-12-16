@@ -1,0 +1,36 @@
+@reference "../../../app/assets/styles/main.style.css";
+
+@layer components {
+  .mui-btn {
+    @apply relative;
+    @apply inline-flex flex-col items-center justify-center gap-1;
+    @apply font-medium;
+    @apply leading-5;
+    @apply select-none;
+    @apply overflow-hidden;
+    @apply cursor-pointer;
+    @apply outline-none;
+    @apply border;
+    @apply transition ease-in-out duration-150;
+
+    min-width: calc(var(--mui-btn-font-size, 1rem) * (35.5 / 14));
+    min-height: calc(var(--mui-btn-font-size, 1rem) * (35.5 / 14));
+
+    padding: var(--mui-btn-py, .5rem) var(--mui-btn-px, .75rem);
+
+    font-family: inherit;
+    font-feature-settings: inherit;
+
+    color: var(--mui-btn-text-color, oklch(98.5% 0 0)); /* zinc 50 */
+    font-size: var(--mui-btn-font-size, 1rem);
+
+    cursor: var(--mui-btn-cursor, pointer);
+
+    background-color: var(--mui-btn-bg-color, oklch(21% 0.006 285.885)); /* zinc 900 */
+
+    border-color: var(--mui-btn-border-color, transparent);
+    border-radius: var(--mui-btn-border-radius-tl, .5rem) var(--mui-btn-border-radius-tr, .5rem) var(--mui-btn-border-radius-br, .5rem) var(--mui-btn-border-radius-bl, .5rem);
+
+    opacity: var(--mui-btn-opacity, 1);
+  }
+}
