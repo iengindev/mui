@@ -1,0 +1,28 @@
+@reference "../../../app/assets/styles/main.style.css";
+
+@layer components {
+  .mui-btn-group {
+    @apply mui:flex mui:flex-nowrap mui:items-center;
+  }
+
+  .mui-btn-group .mui-btn:first-child {
+    --mui-btn-border-radius-tl: .5rem;
+    --mui-btn-border-radius-bl: .5rem;
+    --mui-btn-border-radius-br: 0rem;
+    --mui-btn-border-radius-tr: 0rem;
+  }
+
+  .mui-btn-group .mui-btn:last-child {
+    --mui-btn-border-radius-tl: 0rem;
+    --mui-btn-border-radius-bl: 0rem;
+    --mui-btn-border-radius-br: .5rem;
+    --mui-btn-border-radius-tr: .5rem;
+  }
+
+  .mui-btn-group .mui-btn:not(:first-child):not(:last-child) {
+    --mui-btn-border-radius-tl: 0rem;
+    --mui-btn-border-radius-bl: 0rem;
+    --mui-btn-border-radius-br: 0rem;
+    --mui-btn-border-radius-tr: 0rem;
+  }
+}
