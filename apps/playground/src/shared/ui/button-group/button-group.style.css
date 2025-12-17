@@ -2,7 +2,7 @@
 
 @layer components {
   .mui-btn-group {
-    @apply mui:flex mui:flex-nowrap mui:items-center;
+    @apply flex flex-nowrap items-center;
   }
 
   .mui-btn-group .mui-btn:first-child {

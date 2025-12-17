@@ -1,3 +1,5 @@
+import './button-group.style.css'
+
 import { defineComponent, type SetupContext } from 'vue'
 
 import { ButtonGroupSerivce } from './button-group.service'
