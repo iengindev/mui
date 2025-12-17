@@ -18,11 +18,11 @@
 
     padding: var(--mui-btn-py, .5rem) var(--mui-btn-px, .75rem);
 
+    color: var(--mui-btn-text-color, oklch(98.5% 0 0)); /* zinc 50 */
+
+    font-size: var(--mui-btn-font-size, 1rem);
     font-family: inherit;
     font-feature-settings: inherit;
-
-    color: var(--mui-btn-text-color, oklch(98.5% 0 0)); /* zinc 50 */
-    font-size: var(--mui-btn-font-size, 1rem);
 
     cursor: var(--mui-btn-cursor, pointer);
 
@@ -32,5 +32,148 @@
     border-radius: var(--mui-btn-border-radius-tl, .5rem) var(--mui-btn-border-radius-tr, .5rem) var(--mui-btn-border-radius-br, .5rem) var(--mui-btn-border-radius-bl, .5rem);
 
     opacity: var(--mui-btn-opacity, 1);
+  }
+
+  .mui-btn:hover:enabled {
+    background-color: var(--mui-btn-bg-color-hover, oklch(27.4% 0.006 286.033)); /* zinc 800 */
+  }
+
+  .mui-btn:active:enabled {
+    background-color: var(--mui-btn-bg-color-active, oklch(37% 0.013 285.805)); /* zinc 700 */
+  }
+
+  .mui-btn:disabled {
+    --mui-btn-opacity: .3;
+    --mui-btn-cursor: not-allowed;
+  }
+
+  .mui-btn .mui-icon {
+    min-width: calc(var(--mui-btn-font-size, 1rem) * 1.2);
+    max-width: calc(var(--mui-btn-font-size, 1rem) * 1.2);
+    min-height: calc(var(--mui-btn-font-size, 1rem) * 1.2);
+    max-height: calc(var(--mui-btn-font-size, 1rem) * 1.2);
+
+    fill: var(--mui-btn-text-color, oklch(98.5% 0 0)); /* zinc 50 */
+  }
+
+  .mui-btn .mui-btn-row {
+    @apply flex flex-nowrap items-center justify-center gap-1.5;
+  }
+
+  .mui-btn-severity-secondary {
+    --mui-btn-text-color: oklch(44.2% 0.017 285.786); /* zinc 600 */
+    --mui-btn-bg-color: oklch(96.7% 0.001 286.375); /* zinc 100 */
+    --mui-btn-bg-color-hover: oklch(92% 0.004 286.32); /* zinc 200 */
+    --mui-btn-bg-color-active: oklch(87.1% 0.006 286.286); /* zinc 300 */
+
+    --mui-btn-paint-text-color: oklch(44.2% 0.017 285.786); /* zinc 600 */
+
+    --mui-btn-badge-text-color: oklch(96.7% 0.001 286.375); /* zinc 100 */
+    --mui-btn-badge-bg-color: oklch(44.2% 0.017 285.786); /* zinc 600 */
+  }
+
+  .mui-btn-severity-info {
+    --mui-btn-text-color: oklch(98.5% 0 0); /* zinc 50 */
+    --mui-btn-bg-color: oklch(58.5% 0.233 277.117); /* indigo 500 */
+    --mui-btn-bg-color-hover: oklch(51.1% 0.262 276.966); /* indigo 600 */
+    --mui-btn-bg-color-active: oklch(45.7% 0.24 277.023); /* indigo 700 */
+
+    --mui-btn-paint-text-color: oklch(58.5% 0.233 277.117); /* indigo 500 */
+  }
+
+  .mui-btn-severity-success {
+    --mui-btn-text-color: oklch(98.5% 0 0); /* zinc 50 */
+    --mui-btn-bg-color: oklch(72.3% 0.219 149.579); /* green 500 */
+    --mui-btn-bg-color-hover: oklch(62.7% 0.194 149.214); /* green 600 */
+    --mui-btn-bg-color-active: oklch(52.7% 0.154 150.069); /* green 700 */
+
+    --mui-btn-paint-text-color: oklch(72.3% 0.219 149.579); /* green 500 */
+  }
+
+  .mui-btn-severity-warning {
+    --mui-btn-text-color: oklch(98.5% 0 0); /* zinc 50 */
+    --mui-btn-bg-color: oklch(70.5% 0.213 47.604); /* orange 500 */
+    --mui-btn-bg-color-hover: oklch(64.6% 0.222 41.116); /* orange 600 */
+    --mui-btn-bg-color-active: oklch(55.3% 0.195 38.402); /* orange 700 */
+
+    --mui-btn-paint-text-color: oklch(70.5% 0.213 47.604); /* orange 500 */
+  }
+
+  .mui-btn-severity-danger {
+    --mui-btn-text-color: oklch(98.5% 0 0); /* zinc 50 */
+    --mui-btn-bg-color: oklch(63.7% 0.237 25.331); /* red 500 */
+    --mui-btn-bg-color-hover: oklch(57.7% 0.245 27.325); /* red 600 */
+    --mui-btn-bg-color-active: oklch(50.5% 0.213 27.518); /* red 700 */
+
+    --mui-btn-paint-text-color: oklch(63.7% 0.237 25.331); /* red 500 */
+  }
+
+  .mui-btn-severity-help {
+    --mui-btn-text-color: oklch(98.5% 0 0); /* zinc 50 */
+    --mui-btn-bg-color: oklch(62.3% 0.214 259.815); /* blue 500 */
+    --mui-btn-bg-color-hover: oklch(54.6% 0.245 262.881); /* blue 600 */
+    --mui-btn-bg-color-active: oklch(48.8% 0.243 264.376); /* blue 700 */
+
+    --mui-btn-paint-text-color: oklch(62.3% 0.214 259.815); /* blue 500 */
+  }
+
+  .mui-btn-variant-text {
+    --mui-btn-text-color: var(--mui-btn-paint-text-color, oklch(21% 0.006 285.885));
+    --mui-btn-bg-color: transparent;
+    --mui-btn-bg-color-hover: color-mix(in oklch, var(--mui-btn-paint-text-color, oklch(21% 0.006 285.885)) 5%, transparent);
+    --mui-btn-bg-color-active: color-mix(in oklch, var(--mui-btn-paint-text-color, oklch(21% 0.006 285.885)) 10%, transparent);
+  }
+
+  .mui-btn-variant-outlined {
+    --mui-btn-text-color: var(--mui-btn-paint-text-color, oklch(21% 0.006 285.885));
+    --mui-btn-bg-color: transparent;
+    --mui-btn-bg-color-hover: color-mix(in oklch, var(--mui-btn-paint-text-color, oklch(21% 0.006 285.885)) 5%, transparent);
+    --mui-btn-bg-color-active: color-mix(in oklch, var(--mui-btn-paint-text-color, oklch(21% 0.006 285.885)) 10%, transparent);
+    --mui-btn-border-color: color-mix(in oklch, var(--mui-btn-paint-text-color, oklch(21% 0.006 285.885)) 30%, transparent);
+  }
+
+  .mui-btn-size-small {
+    --mui-btn-py: .375rem;
+    --mui-btn-px: .635rem;
+    --mui-btn-font-size: .875rem;
+
+    --mui-btn-py-icon-only: .375rem;
+    --mui-btn-px-icon-only: .375rem;
+  }
+
+  .mui-btn-size-large {
+    --mui-btn-py: .625rem;
+    --mui-btn-px: .875rem;
+    --mui-btn-font-size: 1.125rem;
+
+    --mui-btn-py-icon-only: .625rem;
+    --mui-btn-px-icon-only: .625rem;
+  }
+
+  .mui-btn-rounded {
+    --mui-btn-border-radius-tl: 2rem;
+    --mui-btn-border-radius-tr: 2rem;
+    --mui-btn-border-radius-br: 2rem;
+    --mui-btn-border-radius-bl: 2rem;
+  }
+
+  .mui-btn-icon-only {
+    --mui-btn-py: var(--mui-btn-py-icon-only, .5rem);
+    --mui-btn-px: var(--mui-btn-px-icon-only, .5rem);
+  }
+
+  .mui-btn .badge {
+    @apply inline-flex flex-nowrap items-center justify-center;
+    @apply rounded-full;
+    @apply leading-0;
+
+    min-width: calc(var(--mui-btn-font-size, 1rem) * 1);
+    max-width: calc(var(--mui-btn-font-size, 1rem) * 1);
+    min-height: calc(var(--mui-btn-font-size, 1rem) * 1);
+    max-height: calc(var(--mui-btn-font-size, 1rem) * 1);
+
+    color: var(--mui-btn-badge-text-color, oklch(21% 0.006 285.885));
+    font-size: calc(var(--mui-btn-font-size, 1rem) * 0.6);
+    background-color: var(--mui-btn-badge-bg-color, oklch(98.5% 0 0));
   }
 }

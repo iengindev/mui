@@ -1,3 +1,5 @@
+import { MIconPropsType } from '..'
+
 export type ButtonSeverityType = 'secondary' | 'info' | 'success' | 'warning' | 'danger' | 'help'
 export type ButtonVariantType = 'text' | 'link' | 'outlined'
 export type ButtonSizeType = 'small' | 'large'
@@ -6,7 +8,7 @@ export type IconPositionType = 'top' | 'left' | 'right' | 'bottom'
 
 export type ButtonIconType = {
   position?:    IconPositionType
-  icon:         MIconPorpsType['icon']
+  icon:         MIconPropsType['icon']
 }
 
 export interface ButtonPropsType {
