@@ -3,9 +3,13 @@
 @layer components {
   .mui-label {
     @apply inline-flex flex-col items-center justify-center gap-2;
-    @apply font-medium;
-    @apply leading-5;
 
     padding: var(--mui-label-padding-y, .5rem) var(--mui-label-padding-x, .75rem);
+  }
+
+  .mui-label .row {
+    @apply inline-flex flex-nowrap items-center justify-center gap-2;
+    @apply font-medium;
+    @apply leading-5;
   }
 }

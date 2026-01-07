@@ -7,13 +7,13 @@ import { $MLabelService } from './service'
 import type { $MLabelPropsType } from './types'
 
 export default defineComponent((props: $MLabelPropsType, ctx: SetupContext) => {
-  const use$MLabelService = new $MLabelService(props)
+  const useLabelService = new $MLabelService(props)
 
   return () => (
     <>
-      <div { ...ctx.attrs } class={use$MLabelService.clsx()}>
+      <div { ...ctx.attrs } class={useLabelService.clsx()}>
         {
-          use$MLabelService.label()
+          useLabelService.label()
         }
       </div>
     </>
@@ -21,5 +21,6 @@ export default defineComponent((props: $MLabelPropsType, ctx: SetupContext) => {
 }, {
   props: [
     'value',
+    'icons',
   ],
 })
