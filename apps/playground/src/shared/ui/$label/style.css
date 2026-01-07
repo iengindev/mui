@@ -12,4 +12,13 @@
     @apply font-medium;
     @apply leading-5;
   }
+
+  .mui-label .mui-icon {
+    @apply fill-black;
+
+    min-width: var(--mui-icon-width, 1.25rem);
+    min-height: var(--mui-icon-height, 1.25rem);
+    max-width: var(--mui-icon-width, 1.25rem);
+    max-height: var(--mui-icon-height, 1.25rem);
+  }
 }
