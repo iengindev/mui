@@ -4,12 +4,12 @@
   .mui-button {
     @apply relative;
     @apply inline-flex flex-col gap-2;
-    @apply font-medium;
-    @apply leading-5;
     @apply select-none;
     @apply overflow-hidden;
     @apply cursor-pointer;
     @apply outline-none;
     @apply transition ease-in-out duration-150;
+
+    padding: var(--mui-button-padding-y, .25rem) var(--mui-label-padding-x, .25rem);
   }
 }

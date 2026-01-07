@@ -1,5 +1,4 @@
 import type { SetupContext } from 'vue'
-import type { JSX } from 'vue/jsx-runtime'
 
 import type { MButtonPropsType, MButtonEmitsType } from './types'
 
@@ -8,7 +7,7 @@ export class MButtonService {
 
   clsx = (): string[] => {
     return [
-      'mui-button'
+      'mui-button',
     ]
   }
 

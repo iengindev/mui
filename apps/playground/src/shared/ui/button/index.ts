@@ -1,2 +1,2 @@
 export { default as MButton } from './component'
-export type * as MButtonTypes from './types'
+export type { MButtonPropsType, MButtonEmitsType } from './types'
