@@ -1,3 +1,5 @@
+import './style.css'
+
 import { defineComponent, type SetupContext } from 'vue'
 
 import { MButtonService } from './service'
@@ -9,15 +11,15 @@ export default defineComponent((props: MButtonPropsType, ctx: SetupContext<MButt
 
   return () => (
     <>
-      <button { ...ctx.attrs } class="mui-button">
-
+      <button { ...ctx.attrs } class={useMButtonService.clsx()} onClick={useMButtonService.handleClick}>
       </button>
     </>
   )
 }, {
   props: [
-    'label',
+    'value',
     'severity',
+    'size',
   ],
 
   emits: [

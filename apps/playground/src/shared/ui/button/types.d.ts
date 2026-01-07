@@ -2,7 +2,7 @@ export type MButtonSeverityType = 'primary' | 'secondary' | 'success' | 'warning
 export type MButtonSizeType = 'small' | 'base' | 'large'
 
 export interface MButtonPropsType {
-  label?:         string
+  value?:         string
   severity?:      MButtonSeverityType
   size?:          MButtonSizeType
 }
