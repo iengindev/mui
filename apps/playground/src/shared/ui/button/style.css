@@ -1,0 +1,15 @@
+@reference "../../../app/assets/styles/main.style.css";
+
+@layer components {
+  .mui-button {
+    @apply relative;
+    @apply inline-flex flex-col gap-2;
+    @apply font-medium;
+    @apply leading-5;
+    @apply select-none;
+    @apply overflow-hidden;
+    @apply cursor-pointer;
+    @apply outline-none;
+    @apply transition ease-in-out duration-150;
+  }
+}
