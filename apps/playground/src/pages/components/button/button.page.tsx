@@ -5,7 +5,7 @@ import { MButton } from '@/shared/ui'
 export default defineComponent(() => {
   return () => (
     <>
-      <MButton/>
+      <MButton value='Submit' icons={[{ position: 'left', icon: 'account' }]}/>
     </>
   )
 })
