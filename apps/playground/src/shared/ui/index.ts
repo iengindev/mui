@@ -1,1 +1,2 @@
-export { MButton, type MButtonTypes } from './button'
+export { MIcon, type MIconPropsType } from './icon'
+export { MButton, type MButtonPropsType, type MButtonEmitsType } from './button'
