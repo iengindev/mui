@@ -4,7 +4,7 @@
   .mui-label {
     @apply inline-flex flex-col items-center justify-center gap-2;
 
-    padding: var(--mui-label-padding-y, .5rem) var(--mui-label-padding-x, .75rem);
+    padding: var(--mui-label-padding-y, .25rem) var(--mui-label-padding-x, .75rem);
   }
 
   .mui-label .row {
