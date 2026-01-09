@@ -8,9 +8,9 @@ export class MIconService {
   constructor(public props: MIconPropsType) {}
 
   clsx = (): string[] => {
-    return [
-      'mui-icon',
-    ]
+    const clsx = ['mui-icon']
+
+    return clsx
   }
 
   path = (): JSX.Element[] => {

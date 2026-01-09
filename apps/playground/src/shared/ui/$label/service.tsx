@@ -8,9 +8,13 @@ export class $MLabelService {
   constructor(public props: $MLabelPropsType) {}
 
   clsx = (): string[] => {
-    return [
-      'mui-label',
-    ]
+    const clsx = ['mui-label']
+
+    if (!this.props.value && this.props.icons && this.props.icons.length > 0) {
+      clsx.push('icon-only')
+    }
+
+    return clsx
   }
 
   icon = (position: IconPositionType['position']): JSX.Element[] | null => {

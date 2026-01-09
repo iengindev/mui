@@ -6,9 +6,9 @@ export class MButtonService {
   constructor(public props: MButtonPropsType, public ctx: SetupContext<MButtonEmitsType>) {}
 
   clsx = (): string[] => {
-    return [
-      'mui-button',
-    ]
+    const clsx = ['mui-button']
+
+    return clsx
   }
 
   handleClick = (event: Event): void => {
