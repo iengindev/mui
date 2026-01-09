@@ -21,4 +21,8 @@
     max-width: var(--mui-icon-width, 1.25rem);
     max-height: var(--mui-icon-height, 1.25rem);
   }
+
+  .icon-only {
+    --mui-label-padding-x: .25rem;
+  }
 }
