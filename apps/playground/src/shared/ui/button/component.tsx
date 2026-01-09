@@ -24,6 +24,8 @@ export default defineComponent((props: MButtonPropsType, ctx: SetupContext<MButt
     'severity',
     'size',
     'icons',
+    'loading',
+    'disabled',
   ],
 
   emits: [

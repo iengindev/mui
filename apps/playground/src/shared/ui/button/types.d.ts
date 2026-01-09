@@ -8,6 +8,8 @@ export interface MButtonPropsType {
   severity?: MButtonSeverityType
   size?: MButtonSizeType
   icons?: $MLabelPropsType['icons']
+  loading?: boolean
+  disabled?: boolean
 }
 
 export interface MButtonEmitsType {

@@ -8,6 +8,10 @@ export class MButtonService {
   clsx = (): string[] => {
     const clsx = ['mui-button']
 
+    if (this.props.severity) {
+      clsx.push('mui-button-severity-' + this.props.severity)
+    }
+
     return clsx
   }
 
