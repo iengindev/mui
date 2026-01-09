@@ -5,7 +5,10 @@ import { MButton } from '@/shared/ui'
 export default defineComponent(() => {
   return () => (
     <>
-      <MButton value='Submit' icons={[{ position: 'left', icon: 'account' }]}/>
+      <div class="flex flex-nowrap items-center gap-2">
+        <MButton icons={[{ position: 'left', icon: 'account' }]}/>
+        <MButton value='Submit' icons={[{ position: 'left', icon: 'account' }]}/>
+      </div>
     </>
   )
 })
