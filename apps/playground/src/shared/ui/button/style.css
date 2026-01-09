@@ -6,10 +6,32 @@
     @apply inline-flex flex-col gap-2;
     @apply select-none;
     @apply overflow-hidden;
-    @apply cursor-pointer;
     @apply outline-none;
     @apply transition ease-in-out duration-150;
 
+    font-family: inherit;
+    font-feature-settings: inherit;
     padding: var(--mui-button-padding-y, .25rem) var(--mui-label-padding-x, .25rem);
+    color: var(--mui-button-text-color, oklch(100% 0 0)); /* white */
+    font-size: var(--mui-button-font-size, 1rem);
+    cursor: var(--mui-button-cursor, pointer);
+    background-color: var(--mui-button-bg-color, oklch(14.1% 0.005 285.823)); /* zinc 950 */
+    opacity: var(--mui-button-opacity, 1);
+    border-radius: var(--mui-button-border-radius, .5rem);
+    border: .1rem solid var(--mui-button-border-color, oklch(14.1% 0.005 285.823)); /* zinc 950 */
+  }
+
+  .mui-button .mui-label .mui-icon {
+    fill: var(--mui-button-text-color, oklch(100% 0 0)); /* white */
+  }
+
+  .mui-button:hover {
+    background-color: var(--mui-button-bg-hover-color, oklch(19.1% 0.005 285.823)); /* zinc 950 + % */
+    border: .1rem solid var(--mui-button-border-hover-color, oklch(19.1% 0.005 285.823)); /* zinc 950 + % */
+  }
+
+  .mui-button:active {
+    background-color: var(--mui-button-bg-hover-color, oklch(24.1% 0.005 285.823)); /* zinc 950 + % */
+    border: .1rem solid var(--mui-button-border-hover-color, oklch(24.1% 0.005 285.823)); /* zinc 950 + % */
   }
 }
