@@ -24,6 +24,21 @@ export default defineComponent(() => {
         <MButton icons={[{ position: 'left', icon: 'account' }]} severity='warning'/>
         <MButton value='Submit' icons={[{ position: 'left', icon: 'account' }]} severity='warning'/>
       </div>
+
+      <div class="flex flex-nowrap items-center gap-2">
+        <MButton icons={[{ position: 'left', icon: 'account' }]} severity='danger'/>
+        <MButton value='Submit' icons={[{ position: 'left', icon: 'account' }]} severity='danger'/>
+      </div>
+
+      <div class="flex flex-nowrap items-center gap-2">
+        <MButton icons={[{ position: 'left', icon: 'account' }]} severity='info'/>
+        <MButton value='Submit' icons={[{ position: 'left', icon: 'account' }]} severity='info'/>
+      </div>
+
+      <div class="flex flex-nowrap items-center gap-2">
+        <MButton icons={[{ position: 'left', icon: 'account' }]} severity='help'/>
+        <MButton value='Submit' icons={[{ position: 'left', icon: 'account' }]} severity='help'/>
+      </div>
     </>
   )
 })
