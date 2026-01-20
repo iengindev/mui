@@ -3,11 +3,9 @@ import type { $MLabelPropsType } from '../$label'
 export type MButtonSeverityType = 'primary' | 'secondary' | 'success' | 'warning' | 'danger' | 'info' | 'help'
 export type MButtonSizeType = 'small' | 'base' | 'large'
 
-export interface MButtonPropsType {
-  value?: string
+export interface MButtonPropsType extends $MLabelPropsType {
   severity?: MButtonSeverityType
   size?: MButtonSizeType
-  icons?: $MLabelPropsType['icons']
   loading?: boolean
   disabled?: boolean
 }
